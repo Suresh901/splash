@@ -6,9 +6,12 @@ import OurClasses from "./components/OurClasses";
 import InstructorSlider from "./components/InstructorSlider";
 import Testimonial from "./components/Testimonial";
 import GallerySection from "./components/Masonry";
-import PricingAndStats from "./components/Pricing";
 import SwimmingSchool from "./components/SwimmingSchool";
-import Footer from "./components/Footer";
+import Footer from "../../components/footer/Footer";
+
+import PricingPlans from "./components/PricingPlan";
+import Counter from "./components/Counter";
+import Contact from "./components/Contact";
 
 const Home = () => {
   return (
@@ -20,9 +23,10 @@ const Home = () => {
       <InstructorSlider />
       <Testimonial />
       <GallerySection />
-      <PricingAndStats />
+      <PricingPlans />
+      <Counter />
       <SwimmingSchool />
-      <Footer />
+      <Contact />
     </div>
   );
 };

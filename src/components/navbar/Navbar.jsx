@@ -1,3 +1,4 @@
+import { RxHamburgerMenu } from "react-icons/rx";
 const Navbar = () => {
   return (
     <div
@@ -25,7 +26,7 @@ const Navbar = () => {
         {/* Hamburger Menu and Dropdowns for Small Screens */}
         <div className="lg:hidden flex items-center gap-2 sm:gap-3 md:gap-5">
           <button className={`border p-2 rounded-md bg-white flex gap-2`}>
-            Join <span className="hidden sm:block"> Our Journey</span>
+            <RxHamburgerMenu />
           </button>
         </div>
       </div>
