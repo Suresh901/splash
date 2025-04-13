@@ -74,13 +74,13 @@ export default function SwimClassCards() {
       {classes.map((classInfo) => (
         <div
           key={classInfo.id}
-          className={`border-2 ${classInfo.borderColor} rounded-lg w-64 flex flex-col items-center px-10 py-5`}
+          className={`border-4 ${classInfo.borderColor} rounded-lg w-64 flex flex-col items-center px-10 py-5 relative mb-4`}
         >
-          <div className="bg-gray-100 rounded-full p-6 mb-8">
+          <div className="bg-gray-100 rounded-full p-6 mb-8 absolute top-[-3rem]">
             {classInfo.icon}
           </div>
 
-          <h2 className="text-lg font-bold text-center text-blue-800 mb-2">
+          <h2 className="text-lg font-bold text-center text-blue-800 mb-2 mt-20">
             {classInfo.title}
           </h2>
 

@@ -5,11 +5,60 @@ export default function OurClasses() {
   const [openClass, setOpenClass] = useState(1);
 
   const classes = [
-    { id: 0, title: "Mini Infant Class", ageRange: "1 | 2-3 YEARS" },
-    { id: 1, title: "Junior Class", ageRange: "2 | 3-4 YEARS" },
-    { id: 2, title: "Toddler Class", ageRange: "3 | 4-5 YEARS" },
-    { id: 3, title: "Beginner Class", ageRange: "4 | 5-6 YEARS" },
-    { id: 4, title: "Adult Class", ageRange: "5 | 6-12 YEARS" },
+    {
+      id: 0,
+      title: "Mini Infant Class",
+      ageRange: "1 | (2-3 YEARS)",
+      description: "Fun and gentle water activities for young toddlers.",
+      ageLabel: "Age: 2-3 Years",
+      time: "10am - 11am",
+      totalClasses: 15,
+      image: "https://i.ytimg.com/vi/yFkxELKC2XE/maxresdefault.jpg",
+    },
+    {
+      id: 1,
+      title: "Junior Class",
+      ageRange: "2 | (3-4 YEARS)",
+      description: "Introduction to water safety and basic swim skills.",
+      ageLabel: "Age: 3-4 Years",
+      time: "11am - 12pm",
+      totalClasses: 20,
+      image:
+        "https://res-1.cloudinary.com/gll/image/upload/c_fit,f_auto,h_657,w_657/v1688999970/dnfcbrnbztpq9vbi85c3.jpg",
+    },
+    {
+      id: 2,
+      title: "Toddler Class",
+      ageRange: "3 | (4-5 YEARS)",
+      description: "Focusing on floating and beginner strokes.",
+      ageLabel: "Age: 4-5 Years",
+      time: "12pm - 1pm",
+      totalClasses: 18,
+      image:
+        "https://compote.slate.com/images/83666164-00ca-424c-95ea-105f4ab8d6df.jpg",
+    },
+    {
+      id: 3,
+      title: "Beginner Class",
+      ageRange: "4 | (5-6 YEARS)",
+      description: "Building swim confidence with new techniques.",
+      ageLabel: "Age: 5-6 Years",
+      time: "1pm - 2pm",
+      totalClasses: 22,
+      image:
+        "https://reddiset.com/cdn/shop/articles/young_man_swimming_the_butterfly_in_a_pool.webp?v=1687179581",
+    },
+    {
+      id: 4,
+      title: "Adult Class",
+      ageRange: "5 | (6-12 YEARS)",
+      description: "For older kids and adults learning to swim.",
+      ageLabel: "Age: 6-12 Years",
+      time: "2pm - 3pm",
+      totalClasses: 25,
+      image:
+        "https://d1s9j44aio5gjs.cloudfront.net/2016/06/4_adult_swimming_aids_to_help_you_learn_to_swim.jpg",
+    },
   ];
 
   const toggleClass = (id) => {
@@ -75,19 +124,17 @@ export default function OurClasses() {
                 <div className="flex flex-col md:flex-row">
                   <div className="p-6 w-full md:w-1/2">
                     <h3 className="text-xl font-semibold text-gray-700 mb-2">
-                      SWIM CLASESS FOR{" "}
+                      SWIM CLASSES FOR{" "}
                       {cls.title.toUpperCase().replace(" CLASS", "")}
                     </h3>
-                    <p className="text-gray-600 mb-2">Age 3-4 Years</p>
-                    <p className="text-gray-600 mb-4">Class Time : 11am-12pm</p>
+                    <p className="text-gray-600 mb-2">{cls.ageLabel}</p>
+                    <p className="text-gray-600 mb-4">Class Time: {cls.time}</p>
 
-                    <p className="text-gray-500 mb-4">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud.
+                    <p className="text-gray-500 mb-4">{cls.description}</p>
+
+                    <p className="text-gray-600 mb-6">
+                      Total! Class - {cls.totalClasses}
                     </p>
-
-                    <p className="text-gray-600 mb-6">Total! Class - 20</p>
 
                     <button className="bg-blue-600 text-white py-2 px-6 rounded hover:bg-blue-700 transition-colors">
                       Register Now
@@ -95,8 +142,8 @@ export default function OurClasses() {
                   </div>
                   <div className="w-full md:w-1/2">
                     <img
-                      src="https://d2h8hramu3xqoh.cloudfront.net/blog/wp-content/uploads/2018/07/Swimming-Benefits-Children-MentallyEmotionallyand-Physically.webp"
-                      alt="Child swimming with goggles"
+                      src={cls.image}
+                      alt={cls.title}
                       className="w-full h-full object-cover"
                     />
                   </div>

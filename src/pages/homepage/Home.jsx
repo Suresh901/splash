@@ -7,11 +7,9 @@ import InstructorSlider from "./components/InstructorSlider";
 import Testimonial from "./components/Testimonial";
 import GallerySection from "./components/Masonry";
 import SwimmingSchool from "./components/SwimmingSchool";
-import Footer from "../../components/footer/Footer";
-
 import PricingPlans from "./components/PricingPlan";
-import Counter from "./components/Counter";
-import Contact from "./components/Contact";
+import Counter from "../../components/counter/Counter";
+import ContactCard from "../../components/contact/Contact";
 
 const Home = () => {
   return (
@@ -26,7 +24,7 @@ const Home = () => {
       <PricingPlans />
       <Counter />
       <SwimmingSchool />
-      <Contact />
+      <ContactCard />
     </div>
   );
 };

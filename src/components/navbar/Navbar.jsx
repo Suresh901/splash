@@ -1,4 +1,6 @@
 import { RxHamburgerMenu } from "react-icons/rx";
+import image from "../../assets/images/logo2.png";
+import { Link } from "react-router";
 const Navbar = () => {
   return (
     <div
@@ -7,19 +9,26 @@ const Navbar = () => {
     >
       <div className="flex justify-between items-center py-4 px-4 md:px-12 mx-auto max-w-[1500px]">
         {/* Logo Section */}
-        <div className="flex-shrink-0 w-20 md:w-24">
-          <img src="image" alt="logo" className="w-full h-auto" />
+        <div className="flex-shrink-0 w-20 md:w-44 h-16">
+          <img src={image} alt="logo" className="w-full h-full" />
         </div>
 
         {/* Navigation Links for Large Screens */}
         <div className="hidden lg:flex gap-x-5 items-center font-medium text-gray-500">
           <ul className="flex gap-x-10">
-            <li>Home</li>
-            <li>About</li>
+            <Link to="/">
+              <li>Home</li>
+            </Link>
+            <Link to="/about">
+              <li>About</li>
+            </Link>
+
             <li>Courses</li>
             <li>Instructor</li>
             <li>Register</li>
-            <li>Contact</li>
+            <Link to="/contact">
+              <li>Contact</li>
+            </Link>
           </ul>
         </div>
 

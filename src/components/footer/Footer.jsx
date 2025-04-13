@@ -1,18 +1,29 @@
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
 import { FaWhatsapp } from "react-icons/fa6";
+import image from "../../assets/images/logo2.png";
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white py-10">
-      <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+    <footer className="bg-gray-900 text-white py-10 ">
+      <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 ">
         {/* Logo & About */}
         <div>
-          <img src="/" alt="logo" />
+          <img src={image} alt="logo" />
           <h2 className="text-xl font-bold mb-3">Splash Swimming pool</h2>
           <p className="text-sm text-gray-400">
             Dive into excellence with our state-of-the-art swimming facilities.
             We offer fun, fitness, and training for all ages.
           </p>
+        </div>
+
+        {/* Contact Info */}
+        <div>
+          <h3 className="text-lg font-semibold mb-3">Contact Us</h3>
+          <p className="text-sm text-gray-300">
+            Splash Swimming pool, Pepsicola, kathmandu
+          </p>
+          <p className="text-sm text-gray-300 mt-1">Email: splash@gmail.com</p>
+          <p className="text-sm text-gray-300 mt-1">Phone: (123) 456-7890</p>
         </div>
 
         {/* Quick Links */}
@@ -25,16 +36,6 @@ const Footer = () => {
             <li>Membership</li>
             <li>Contact</li>
           </ul>
-        </div>
-
-        {/* Contact Info */}
-        <div>
-          <h3 className="text-lg font-semibold mb-3">Contact Us</h3>
-          <p className="text-sm text-gray-300">
-            Splash Swimming pool, Pepsicola, kathmandu
-          </p>
-          <p className="text-sm text-gray-300 mt-1">Email: splash@gmail.com</p>
-          <p className="text-sm text-gray-300 mt-1">Phone: (123) 456-7890</p>
         </div>
 
         {/* Social Media */}

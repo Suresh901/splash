@@ -3,16 +3,17 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useRef, useState } from "react";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa6";
+import banner from "../../../assets/images/banner.png";
 
 const HeroSection = () => {
   const img = [
     {
       id: 1,
-      image: "https://htmldemo.net/swimmer/img/swimmer/1.webp",
+      image: banner,
     },
     {
       id: 2,
-      image: "https://htmldemo.net/swimmer/img/swimmer/1.webp",
+      image: banner,
     },
   ];
 

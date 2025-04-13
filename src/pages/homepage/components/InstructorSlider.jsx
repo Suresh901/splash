@@ -31,7 +31,6 @@ export default function InstructorSlider() {
         "https://www.uaepersonaltrainers.com/wp-content/uploads/2021/06/Swimming-Instructor-In-Abu-Dhabi-Lisle.jpg",
       color: "bg-red-500",
     },
-    // Add more instructors as needed
   ];
 
   const settings = {
@@ -111,13 +110,14 @@ function PrevArrow(props) {
   const { className, style, onClick } = props;
   return (
     <button
-      className="absolute left-0 top-1/2 -translate-y-1/2 z-10 w-10 h-10 flex items-center justify-center text-blue-500 bg-white rounded-full shadow-md focus:outline-none"
+      className="absolute left-0 top-1/2 -translate-y-1/2 z-10 w-10 h-10 
+      flex items-center justify-center text-blue-500 bg-white rounded-full shadow-md focus:outline-none"
       style={{ ...style }}
       onClick={onClick}
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        className="h-6 w-6"
+        className="h-8 w-8"
         fill="none"
         viewBox="0 0 24 24"
         stroke="currentColor"
@@ -137,13 +137,14 @@ function NextArrow(props) {
   const { className, style, onClick } = props;
   return (
     <button
-      className="absolute right-0 top-1/2 -translate-y-1/2 z-10 w-10 h-10 flex items-center justify-center text-blue-500 bg-white rounded-full shadow-md focus:outline-none"
+      className="absolute right-0 top-1/2 -translate-y-1/2 z-10 w-10 h-10 flex 
+      items-center justify-center text-blue-500 bg-white rounded-full shadow-md focus:outline-none"
       style={{ ...style }}
       onClick={onClick}
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        className="h-6 w-6"
+        className="h-8 w-8"
         fill="none"
         viewBox="0 0 24 24"
         stroke="currentColor"

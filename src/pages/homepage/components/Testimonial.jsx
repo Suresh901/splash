@@ -28,11 +28,11 @@ export default function Testimonial() {
         <div className="text-center">
           <div className="text-gray-400 text-6xl mb-4">&ldquo;</div>
           <p className="text-gray-600 mb-4 mx-auto max-w-3xl">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et daenim ad minim veniam, quis
-            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. voluptate velit esse cillum dolore eu fugiat swimmer
-            ground
+            I used to be nervous around water, but the instructors at Splash
+            Swimming pool made me feel so comfortable from day one. They explain
+            things clearly and are really encouraging. Now I can swim with
+            confidence, and I actually look forward to every class! — Riya
+            Shrestha
           </p>
           <div className="text-gray-400 text-6xl">&rdquo;</div>
         </div>
